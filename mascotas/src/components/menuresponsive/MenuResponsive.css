@@ -1,0 +1,43 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    background-color: olive;  
+}
+
+.enlaces{
+    color: black;
+    font-family: "Lobster", sans-serif;
+    margin: 20px;
+    font-size: 25px;
+}
+
+
+.Header-ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.Header-ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none; /* Esto quitará el punto de la lista */
+}
+
+.Header-btn{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .Header-nav{
+        display: none;
+    }
+
+    .Header-nav.isVisible{
+        display: block;
+    }
+
+    .Header-btn{
+        display: block;
+    }
+}
+
